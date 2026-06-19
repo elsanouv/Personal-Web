@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Register | Elsanovita.</title>
+</head>
+<body>
+
+    <!----------------------- Main Container -------------------------->
+
+     <div class="container d-flex justify-content-center align-items-center min-vh-100">
+
+    <!----------------------- Login Container -------------------------->
+
+       <div class="row border rounded-5 p-3 bg-white shadow box-area">
+
+    <!--------------------------- Left Box ----------------------------->
+
+       <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #7743DB;">
+           <div class="featured-image mb-3">
+            <img src="images/register.png" class="img-fluid" style="width: 500px;">
+           </div>
+           <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">Be Verified</p>
+           <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">Join experienced Designers on this platform.</small>
+       </div> 
+
+    <!-------------------- ------ Right Box ---------------------------->
+        
+       <div class="col-md-6 right-box">
+          <div class="row align-items-center">
+                <div class="header-text mb-4">
+                     <h2>WELCOME</h2>
+                     <p>I'm happy, you want to be friends with me.</p>
+                </div>
+                <main>
+                    <h1>Registration</h1>
+                    <form action="proses_pendaftaran.php" method="POST">
+                      <label for="nama_lengkap">Full Name:</label>
+                      <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                
+                      <label for="nim">NIM:</label>
+                      <input type="text" id="nim" name="nim" required>
+                
+                      <label for="kelas">Class:</label>
+                      <select id="kelas" name="kelas">
+                        <option value="A">R1-A</option>
+                        <option value="B">R1-B</option>
+                        <option value="C">R1-C</option>
+                        <option value="D">R2-A</option>
+                        <option value="E">R2-B</option>
+                        <option value="F">R2-C</option>
+                        <option value="G">R3-A</option>
+                      </select>
+                
+                      <label for="semester">Semester:</label>
+                      <select id="semester" name="semester">
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                        <option value="7">Semester 7</option>
+                        <option value="8">Semester 8</option>
+                      </select>
+                
+                      <label for="Prodi">Prodi:</label>
+                      <select id="Prodi" name="Prodi">
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                      </select>
+                
+                      <label for="tempat_lahir">Place of Birth:</label>
+                      <input type="text" id="tempat_lahir" name="tempat_lahir" required>
+                
+                      <label for="tanggal_lahir">Date of Birth:</label>
+                      <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+                
+                      <label for="alamat">Address:</label>
+                      <textarea id="alamat" name="alamat" required></textarea>
+                
+                      <label for="jenis_kelamin">Gender :</label>
+                      <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+                      <label for="laki_laki">Male</label>
+                      <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                      <label for="perempuan">Female</label>
+                      
+                      <label class="col-md-10" for="nomor_hp">Nomor HP:</label>
+                      <input type="tel" id="nomor_hp" name="nomor_hp" required>
+                     
+                
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+
+                      <label for="password">Password:</label>
+                      <input type="password" id="password" name="password" required>
+                
+                      <input type="submit" value="Register">
+                      <div class="row">
+                        <small>Your have account? <a href="login.html">Sign In</a></small>
+                    </div>
+                    </form>
+                  </main> 
+      </div>
+    </div>
+</body>
+
+<style>
+    header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+h2{
+  color: #7743DB;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Styling form */
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="date"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+input[type="password"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #7743DB;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+.row small {
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+}
+
+</style>
+</html>
